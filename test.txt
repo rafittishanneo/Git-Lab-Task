@@ -1,0 +1,11 @@
+it is a test repo text file that include the command 
+
+To create another repository from a new folder:
+
+mkdir [NewRepo]
+cd [NewRepo]
+git init
+echo "# New Repo" > README.md
+git add .
+git commit -m "Initial commit"
+gh repo create [NewRepo] --public --source=. --remote=origin --push
